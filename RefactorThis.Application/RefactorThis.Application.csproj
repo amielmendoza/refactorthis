@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Processors\InvoiceTypes\**" />
+    <EmbeddedResource Remove="Processors\InvoiceTypes\**" />
+    <None Remove="Processors\InvoiceTypes\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RefactorThis.Domain\RefactorThis.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
